@@ -19,12 +19,12 @@
 //  solution 1: 双指针
 var maxArea = function (height) {
   var max = 0;
-  var left = 0,
-    right = height.length - 1;
+  var left = 0, right = height.length - 1;
 
   while (left < right) {
     var area = (right - left) * Math.min(height[left], height[right]);
     max = Math.max(max, area);
+    
     if (height[left] < height[right]) {
       left++;
     } else {
