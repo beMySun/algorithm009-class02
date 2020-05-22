@@ -4,17 +4,17 @@
  */
 
 //  solution 1: 暴力双循环
-// var maxArea = function (height) {
-//   var max = 0;
+var maxArea = function (height) {
+  var max = 0;
 
-//   for (var i = 0; i < height.length; i++) {
-//     for (var j = i + 1; j < height.length; j++) {
-//       max = Math.max(max, (j - i) * Math.min(height[i], height[j]));
-//     }
-//   }
+  for (var i = 0; i < height.length; i++) {
+    for (var j = i + 1; j < height.length; j++) {
+      max = Math.max(max, (j - i) * Math.min(height[i], height[j]));
+    }
+  }
 
-//   return max;
-// };
+  return max;
+};
 
 //  solution 1: 双指针
 var maxArea = function (height) {
