@@ -16,11 +16,11 @@
  * @param {TreeNode} root
  * @return {number[]}
  */
-var inorderTraversal = function(root) {
+var inorderTraversal = function (root) {
   var stack = [];
 
   function helper(node) {
-    if(!node) return;
+    if (!node) return;
 
     node.left && helper(node.left);
     stack.push(node.val);
@@ -32,4 +32,3 @@ var inorderTraversal = function(root) {
   return stack;
 };
 // @lc code=end
-

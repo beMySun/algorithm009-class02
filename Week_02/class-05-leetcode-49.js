@@ -10,7 +10,7 @@
  * @return {string[][]}
  */
 
-// 思路: 以排序后的 str 作为 key, values 为符合 key 的 Array.
+// 思路: 以排序后的 str 作为 key, values 为排序后为 key 的 str 集合.
 var groupAnagrams = function (strs) {
   const map = new Map();
 

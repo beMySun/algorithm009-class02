@@ -11,9 +11,9 @@
  * @return {boolean}
  */
 // 方法1:
-// var isAnagram = function (s, t) {
-//   return s.split('').sort().join('') == t.split('').sort().join('');
-// };
+var isAnagram = function (s, t) {
+  return s.split('').sort().join('') == t.split('').sort().join('');
+};
 
 // 方法2: Set
 var isAnagram = function(s, t) {
