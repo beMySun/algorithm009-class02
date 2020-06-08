@@ -1,12 +1,14 @@
 #学习笔记
 
+回溯不是很理解, 先看题解做， 熟悉。
+
 ## 递归代码模板
 
 ```java
 // Java
 public void recur(int level, int param) { 
   // terminator 
-  if (level > MAX_LEVEL) { 
+  if (level > MAX_LEVEL) {
     // process result 
     return; 
   }
