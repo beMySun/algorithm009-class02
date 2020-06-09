@@ -30,6 +30,7 @@ var lowestCommonAncestor = function (root, p, q) {
     if ((leftSon && rightSon) || ((root.val === p.val || root.val === q.val) && (leftSon || rightSon))) {
       ancestor = root;
     }
+
     return leftSon || rightSon || root.val === p.val || root.val === q.val;
   }
 
